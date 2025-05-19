@@ -49,7 +49,7 @@ export default function VibeCheckApp() {
   };
 
   const getVibe = () => {
-    const score = answers.reduce((acc, a, i) => acc + a.length, 0);
+    const score = answers.reduce((acc, a) => acc + a.length, 0);
     return score % 2 === 0 ? "Chill Vibes" : "Hype Energy";
   };
 
